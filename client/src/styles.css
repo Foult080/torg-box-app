@@ -1,0 +1,76 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.clock-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.loader {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.content {
+  margin-top: 2rem;
+}
+
+.app-header {
+  display: flex;
+  justify-content: center;
+}
+
+.clock {
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+  border-radius: 50%;
+  position: relative;
+  margin: 20px auto;
+  background: white;
+}
+
+.clock-face {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateY(-2px); /* Небольшая корректировка для визуальной центровки */
+}
+
+.hand {
+  width: 50%;
+  height: 4px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s cubic-bezier(0.4, 2.3, 0.3, 1);
+}
+
+.hour-hand {
+  height: 6px;
+  background: #333;
+  left: 25%;
+  width: 25%;
+}
+
+.minute-hand {
+  height: 4px;
+  background: #666;
+}
+
+.second-hand {
+  height: 2px;
+  background: red;
+}
+
+.hour-mark {
+  width: 4px;
+  height: 10px;
+  background: black;
+  position: absolute;
+  top: 92px;
+  left: 93px;
+}
